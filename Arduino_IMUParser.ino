@@ -37,7 +37,7 @@ void setup()
   Serial.begin(115200);
   bno.reset();
   while(bno.begin() != BNO::eStatusOK) {
-    Serial.println("bno begin faild");
+    // Serial.println("bno begin faild");
     printLastOperateStatus(bno.lastOperateStatus);
     delay(2000);
   }
