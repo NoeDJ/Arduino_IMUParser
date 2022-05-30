@@ -48,10 +48,10 @@ void loop()
 {
   BNO::sEulAnalog_t   sEul;
   sEul = bno.getEul();
-  Serial.print(sEul.pitch, 3);
+  Serial.print(sEul.pitch, 8);
   Serial.print(",");
-  Serial.print(sEul.roll, 3);
+  Serial.print(sEul.roll, 8);
   Serial.print(",");
-  Serial.println(sEul.head, 3);
+  Serial.println(sEul.head, 8);
   delay(20);
 }
